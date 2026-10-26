@@ -1,0 +1,13 @@
+package eccezioni;
+
+public class BatteriaScaricaException extends RossiGoException {
+    private final int livelloAttuale;
+
+    public BatteriaScaricaException(String message, int livelloAttuale) {
+        super(message);
+        this.livelloAttuale = livelloAttuale;
+    }
+    public int getLivelloAttuale() {
+        return livelloAttuale;
+    }
+}
